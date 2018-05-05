@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Layout from './layout/Layout';
+import Navigator from './Navigator';
+import MainView from './MainView';
 
 class App extends Component {
   render() {
     return (
-      <Layout
-        side={<span>side</span>}
-        main={<span>main</span>}
-      />
+      <BrowserRouter>
+        <Layout
+          side={<Navigator />}
+          main={<MainView />}
+        />
+      </BrowserRouter>
     );
   }
 }
