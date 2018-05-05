@@ -1,0 +1,11 @@
+.layout-container {
+  display: flex;
+}
+
+.layout-side {
+  flex: 2;
+}
+
+.layout-main {
+  flex: 10;
+}
