@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import A from './pages/A';
 
 const Navigator = () => (
   <nav>
@@ -12,12 +14,8 @@ const Navigator = () => (
 
 const MainView = () => (
   <Switch>
-    <Route exact path='/' component={() => (
-      <div>Main</div>
-    )} />
-    <Route path='/a' component={() => (
-      <div>A</div>
-    )} />
+    <Route exact path='/' component={Home} />
+    <Route path='/a' component={A} />
   </Switch>
 )
 
